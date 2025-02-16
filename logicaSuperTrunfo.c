@@ -1,4 +1,8 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+//Modificando o jogo para o desafio aventureiro!
 
 // Desafio Super Trunfo - Países
 // Tema 2 - Comparação das Cartas
@@ -6,13 +10,29 @@
 // Siga os comentários para implementar cada parte do desafio.
 
 int main() {
-    // Definição das variáveis para armazenar as propriedades das cidades
-    // Você pode utilizar o código do primeiro desafio
-    char nomedacidade1, nomedacidade2;
-    float populacaocidade1, populacaocidade2, areacidade1,areacidade2, PIBcidade1, PIBcidade2;
-    int PontosTuristicoscidade1, PontosTuristicoscidade2;
-    char CidadeVencedora;
+    int Cidade1, Cidade2;
+    srand(time(0));
 
+
+   // Definição das variáveis para armazenar as propriedades das cidades
+    // Você pode utilizar o código do primeiro desafio
+    printf("Entre com o nome da Cidade1 \n"); 
+    printf("Entre com o nome da Cidade2 \n");
+    printf("Entre com a população da cidade1\n"); 
+    printf("Entre com a população da cidade2\n"); 
+    printf("Entre com a área da cidade1 \n");
+    printf("Entre com a área da cidade2\n"); 
+    printf("Entre com o PIB da cidade1\n"); 
+    printf("Entre com o PIB da cidade2 \n");
+    printf("Entre com os Pontos Turisticos cidade1 \n"); 
+    printf("Entre com os Pontos Turisticos cidade2 \n");
+    printf("Cidade Vencedora \n");
+    scanf("&s", &Cidade1);
+    scanf("%s", &Cidade2);
+
+    Cidade1 = rand() % 11 + 1;
+   
+ 
 
     printf("Entre com o nome da primeira cidade:. \n");
     scanf("%s", &nomedacidade1);
